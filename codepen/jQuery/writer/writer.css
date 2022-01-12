@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee;
+  }
+  
+  .typing.animate {
+    width: 17ch;
+    border-right: 0.1em solid black;
+    font-family: monospace;
+    font-size: 2em;
+    animation: type 2.5s steps(17), writer 1s infinite alternate, delete 1s steps(6) 2.5s, type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .typing.animate::before { 
+    content: "Hello, I'm Honn.";
+    animation: type2 1s steps(4) 3s forwards, type3 3s steps(18, end) 10s forwards;
+  }
+  
+  @keyframes type {
+    from {
+      width: 0;
+    }
+    to {
+      width: 17ch;
+    }
+  }
+  
+  @keyframes type2 {
+    from {
+      width: 13ch;
+      content: "Hello, I'm Hoon. "
+    }
+    to {
+      width: 17ch;
+      content: "Hello, I'm Hoon. "
+    }
+  }
+  
+  @keyframes type3 {
+    from {
+      width: 17ch;
+      content: "Hello, I'm Hoon. Welcome to my Website!"
+    }
+    to {
+      width: 39ch;
+      content: "Hello, I'm Hoon. Welcome to my Website!"
+    }
+  }
+  
+  @keyframes writer {
+    0% {
+      border-color: black;
+    }
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: black;
+    }
+  }
+  
+  @keyframes delete {
+    from {
+      width: 17ch;
+    }
+    to {
+      width: 4ch;
+    }
+  }

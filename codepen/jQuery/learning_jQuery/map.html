@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery map</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function() {
+            var ids = $("li").map(function() {
+
+                $(this).on("click", function() {
+
+                $(this).css("color", "blue");            
+                });
+            });
+            const reset = $("button").on("click", function() {
+                $("ul").find("*")
+                .css("color", "black");
+            });
+        });
+          
+	</script>
+</head>
+
+<body>
+
+	<h1>.map() 메소드</h1>
+	<ul>
+		<li id="one">첫 번째 아이템이에요!</li>
+		<li id="one">두 번째 아이템이에요!</li>
+		<li id="one">세 번째 아이템이에요!</li>
+		<li id="one">네 번째 아이템이에요!</li>
+	</ul>
+	<button>li 요소 css 초기화</button>
+	<p id="text"></p>
+	
+</body>
+
+</html>
