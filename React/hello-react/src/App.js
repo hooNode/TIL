@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import map from './components/map/map'
+import React from 'react';
+import { Map } from './pages'
 
 function App() {
   return (
-    <map />
+    <Map />
   );
 }
 
