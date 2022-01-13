@@ -7,3 +7,5 @@ function evenOdd(num) {
         return console.log("Zero")
     }
 }
+
+evenOdd(123)
