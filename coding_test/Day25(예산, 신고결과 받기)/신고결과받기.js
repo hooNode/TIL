@@ -27,3 +27,29 @@ function solution(id_list, report, k) {
 
   return Object.values(newObj);
 }
+
+function solution(id_list, report, k) {
+  var newArr = [];
+  var newObj = {};
+  var cnt = 0;
+
+  id_list.forEach((el) => {
+    newObj[el] = cnt;
+  });
+
+  id_list.forEach((el, index) => {
+    newArr.push(report.filter((rep) => el === rep.split(" ")[1]));
+    if (index === id_list.length - 1) {
+      newArr.forEach((el) => {
+        el = [...new Set(el)];
+        if (el.length >= k) {
+          el.forEach((e) => {
+            newObj[e.split(" ")[0]] += 1;
+          });
+        }
+      });
+    }
+  });
+
+  return Object.values(newObj);
+}
