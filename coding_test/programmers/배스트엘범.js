@@ -24,9 +24,7 @@ function solution(genres, plays) {
       plays: tempPlay,
     });
   });
-  genresArr = genres.map((genre, index) => {
-    return { id: index, genre: genre, plays: plays[index] };
-  });
+
   // 랭킹
   genreSortArr.sort((a, b) => b.plays - a.plays);
 
