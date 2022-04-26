@@ -18,6 +18,147 @@ function solution(board, moves) {
       answer += 2;
     }
   });
+  if (temp1 === temp2 && basket.length !== 0) {
+    basket = basket.slice(0, basket.length - 2);
+    answer += 2;
+  }
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+if (temp1 === temp2 && basket.length !== 0) {
+  basket = basket.slice(0, basket.length - 2);
+  answer += 2;
+}
+});
+
 
   return answer;
 }
