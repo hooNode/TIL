@@ -1,26 +1,20 @@
 function solution(n, times) {
-  var answer = 0;
-  let count = 1;
-  const timeHash = {};
-  times
-    .sort((a, b) => a - b)
-    .forEach((time) => {
-      timeHash[time] = 1;
-    });
+  let min = 0;
+  let max = Math.max(...times) * n;
+  let arr = [];
 
-  while (count < n) {
-    for (let time in timeHash) {
-      console.log(timeHash[time] * time);
-      if (answer <= timeHash[time] * time) {
-        answer = timeHash[time] * time;
-        timeHash[time]++;
-        count++;
-      } else if (answer === timeHash[time] * time) {
-        timeHash[time]++;
-        count++;
-      }
+  while (min <= max) {
+    let mid = Math.floor((max + min) / 2);
+    let count = times.reduce((acc, time) => {
+      return acc + Math.floor(mid / time);
+    }, 0);
+
+    if (count < n) {
+      min = mid + 1;
+    } else {
+      max = mid - 1;
     }
   }
 
-  return answer;
+  return min;
 }
