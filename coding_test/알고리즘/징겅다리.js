@@ -30,3 +30,7 @@ function solution(distance, rocks, n) {
   BinarySearch();
   return answer;
 }
+
+// 되는 애들 중 작은 값을 찾아 -> count === n && max - 1
+// 되는 애들 중 큰 값을 찾아 -> count === n && min + 1
+// 그 후 min or max 중에 정답 확인
